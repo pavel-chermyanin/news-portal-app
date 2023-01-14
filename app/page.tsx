@@ -4,10 +4,10 @@ import NewsList from "./NewsList";
 
 async function HomePage() {
   // fetch the news data
-  // const news: NewsResponse = await fetchNews(categories.join(","));
+  const news: NewsResponse = await fetchNews(categories.join(","));
   return (
     <div>
-      {/* <NewsList news={news} /> */}
+      <NewsList news={news} />
     </div>
     // NewsList news
   );
